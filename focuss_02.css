@@ -49,10 +49,8 @@ html, body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     animation: headAnimation 2.215s  infinite;
-
- 
-        
     }
+
     @keyframes headAnimation {
         0% {
                 background-image: url("./handnAnimation1.PNG");
@@ -131,6 +129,7 @@ html, body {
         } */
 
         #handAnimation{ 
+            z-index: 5;
             position: absolute;
             background-repeat: no-repeat;
             inset: 0;

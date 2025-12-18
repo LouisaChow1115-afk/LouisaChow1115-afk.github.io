@@ -1,0 +1,206 @@
+html, body {
+   width: 100%;
+   height: 100%;
+    margin: 0; 
+    /* weil das standerd body bestimmte breite margin hat und wir brauchen das nicht */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+    overflow: hidden;
+    /* das heisst man kann nicht scrollen */
+}
+
+.scene {
+    position:relative;
+    /* macht dieses element zur referenz fur absolute positionierung */
+    
+    width: 100vw;
+    height: 100vh;
+    /* 100vw = 100% der breite des viewports */
+
+    
+
+   
+   
+}
+
+.layer{
+    position: absolute; 
+    /* position absolut bedeutet,dass die element aus dem normalen flow herausfliegt */
+    top: 0;
+    left: 0; 
+    /*nedd 0 cuz otherwise there will be a gap  */
+    width: 100%;
+    height: 100%;  
+    object-fit: fill;
+    /* full fläche  verzerrt möglich */
+    
+    
+}
+
+/* animation von hand */
+
+#headAnimation  { 
+    z-index: 5;
+    position: absolute;
+    inset: 0;
+    /* inset 0 beddeutet, dass es an der oberen linken und rechten kante an der unteren kante positioniert wird */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    animation: headAnimation 2.215s  infinite;
+
+ 
+        
+    }
+    @keyframes headAnimation {
+        0% {
+                background-image: url("./handnAnimation1.PNG");
+            }
+    
+        6.6% {
+                background-image: url("./handnAnimation2.png");
+            }
+    
+        13.3% {
+                background-image: url("./handnAnimation3.png");
+            }
+    
+        20% {
+                background-image: url("./handnAnimation4.png");
+            }
+    
+        23.5% {
+                background-image: url("./handnAnimation5.png");
+            }
+    
+        29.4% {
+                background-image: url("./handnAnimation6.png");
+            }
+    
+        35.2% {
+                background-image: url("./handnAnimation7.png");
+            }
+    
+        41.1% {
+                background-image: url("./handnAnimation9.png");
+            }
+    
+        59.2% {
+                background-image: url("./handnAnimation10.png")
+            }
+            
+        58.8% {
+                background-image: url("./handnAnimation11.png")
+            }
+
+        64.7% {
+                background-image: url("./handnAnimation8.png")
+            }
+
+        70.5% {
+                background-image: url("./handnAnimation12.png")
+            }
+
+        76.4% {
+                background-image: url("./handnAnimation13.png")
+            }
+
+        82.3% {
+                background-image: url("./handnAnimation14.png")
+            }
+        88.2% {
+                background-image: url("./handnAnimation15.png")
+            }
+
+        100% {
+                background-image: url("./handnAnimation16.png")
+            }
+            
+        } 
+
+        /* @keyframes handAnimation {
+            from {
+                    background-image: url("headanimation/handnAnimation1.PNG");
+                }
+        
+            
+            to {
+                    background-image: url("headanimation/handnAnimation17.png");
+                }
+        } */
+
+        #handAnimation{ 
+            position: absolute;
+            background-repeat: no-repeat;
+            inset: 0;
+            background-size: 100% 100%;
+            animation: handAnimation 1.875s  infinite;
+        }
+
+        @keyframes handAnimation {
+                0% {
+                    background-image: url("./01handanimation.png");
+                }
+                1.25% {
+                    background-image: url("./01handanimation.png");
+                }
+                25% {
+                    background-image: url("./02handanimation.png");
+                }
+                
+                37.5% {
+                    background-image: url("./02handanimation.png");
+                }
+
+                50% {
+                    background-image: url("./03handanimation.png");
+                }
+
+                62.5% {
+                    background-image: url("./03handanimation.png");
+                }
+                75% {
+                    background-image: url("./04handanimation.png");
+                }
+                87.5% {
+                    background-image: url("./04handanimation.png");
+                }
+
+                100% {
+                    background-image: url("./05handanimation.png");
+                }
+            
+            
+        }
+
+
+/* musik */
+#musik { 
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform:translateX(-50%);
+    z-index: 10;
+    background:rgba(42, 22, 22, 0.5);
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+#musik audio { 
+width: 200px;}
+
+
+
+
+#lernMethode {
+   
+     
+    position: fixed;
+    top: 50px;
+    left: 1%;
+    
+    z-index: 10;
+    background:rgba(42, 22, 22, 0.5);
+    padding: 8px 12px;
+    border-radius: 20px;
+}

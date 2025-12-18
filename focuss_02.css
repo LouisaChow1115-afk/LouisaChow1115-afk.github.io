@@ -54,7 +54,7 @@ html, body {
 
     @keyframes headAnimation {
         0% {
-                background-image: url("./handnAnimation1.png");
+                background-image: url("./handnAnimation1.PNG");
             }
     
         6.6% {
@@ -113,14 +113,14 @@ html, body {
             }
 
         100% {
-                background-image: url("./handnAnimation1.png")
+                background-image: url("./handnAnimation17.PNG")
             }
             
         } 
 
         /* @keyframes handAnimation {
             from {
-                    background-image: url("headanimation/handnAnimation1.png");
+                    background-image: url("headanimation/handnAnimation1.PNG");
                 }
         
             

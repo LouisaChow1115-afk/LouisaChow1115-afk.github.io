@@ -46,6 +46,7 @@ html, body {
     position: absolute;
     inset: 0;
     /* inset 0 beddeutet, dass es an der oberen linken und rechten kante an der unteren kante positioniert wird */
+    background-color: brown;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     animation: headAnimation 2.215s  infinite;
@@ -53,7 +54,7 @@ html, body {
 
     @keyframes headAnimation {
         0% {
-                background-image: url("./handnAnimation1.PNG");
+                background-image: url("./handnAnimation1.png");
             }
     
         6.6% {
@@ -112,7 +113,7 @@ html, body {
             }
 
         100% {
-                background-image: url("./handnAnimation16.png")
+                background-image: url("./handnAnimation1.png")
             }
             
         } 

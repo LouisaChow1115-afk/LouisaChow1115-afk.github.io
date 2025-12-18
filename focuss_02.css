@@ -46,7 +46,7 @@ html, body {
     position: absolute;
     inset: 0;
     /* inset 0 beddeutet, dass es an der oberen linken und rechten kante an der unteren kante positioniert wird */
-    background-color: brown;
+
     background-size: 100% 100%;
     background-repeat: no-repeat;
     animation: headAnimation 2.215s  infinite;
